@@ -14,7 +14,16 @@ function ande() {
     var contador = 0;
     var contador2 = 0;
 
-    if (num1.length == 0) {
+    if (num1.length == 0 && num2.length == 0) {
+        text.innerHTML = "Rellena la casilla 1 y 2"
+        text.style.color = "red";
+        comprobar = false;
+        return false;
+    } else {
+        comprobar = true;
+    }
+
+    if (num1.length == 0 ) {
         text.innerHTML = "Rellena la casilla 1"
         text.style.color = "red";
         comprobar = false;
@@ -22,16 +31,6 @@ function ande() {
     } else {
         comprobar = true;
     }
-
-    if (num2.length == 0) {
-        text.innerHTML = "Rellena la casilla 2"
-        text.style.color = "red";
-        comprobar = false;
-        return false;
-    } else {
-        comprobar = true;
-    }
-
 
     for (var i = 0; i < num1.length; i++) {
         if (num1[i] == "1" || num1[i] == "0") {
@@ -46,6 +45,16 @@ function ande() {
         text.innerHTML = "En la casilla 1 el numero no es binario";
         text.style.color = "red";
         return false;
+    }
+
+
+    if (num2.length == 0) {
+        text.innerHTML = "Rellena la casilla 2"
+        text.style.color = "red";
+        comprobar = false;
+        return false;
+    } else {
+        comprobar = true;
     }
 
     for (var i = 0; i < num2.length; i++) {

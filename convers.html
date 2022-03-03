@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Operaciones MP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script type="text/javascript" src="assets/js/calcu.js"></script> 
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="assets/js/calcu.js"></script>
     <style>
         body {
             color: #000;
             overflow-x: hidden;
             height: 100%;
-            background-color: #121212;
+            background-color: #0078ff;
             background-repeat: no-repeat;
-            background-size: 100% 100%
         }
 
         .card {
@@ -28,7 +37,7 @@
         }
 
         .blue-text {
-            color: white
+            color: black;
         }
 
         .form-control-label {
@@ -92,11 +101,38 @@
     </style>
 </head>
 
-<body class="">
+<body style="background-image: url(assets/img/overlay-bg.jpg)">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top bg-dark" >
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html"></a></h1>
+            <!-- Para usar una imagen -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="./index.html#home">Home</a></li>
+                    <li><a class="nav-link scrollto" href="./index.html#about">Sobre mí</a></li>
+                    <li><a class="nav-link scrollto" href="./index.html#services">Servicios</a></li>
+                    <li><a class="nav-link scrollto" href="./index.html#work">Prtfolio</a></li>
+                    <li><a class="nav-link scrollto" href="./index.html#contact">Contacto</a></li>
+                    <li><a class="nav-link scrollto active" href="convers.html">Operaciones MP</a></li>
+                    <li><a style="color: #0078ff;" class="nav-link scrollto  target=" _BLANK" href="cv.pdf"
+                            download="cv"">Descargar CV</a></li>
+        </ul>
+        <i class=" bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+
     <div class="container-fluid px-1 py-5 mx-auto">
         <div class="row d-flex justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-                <h3 style="color: #fff;">Operaciones MP1</h3>
+                <h3 style="color: black; margin-top: 10%;">Operaciones MP1</h3>
                 <p class="blue-text">Esta calculadora sirve para que puedas comprobar si tus calculos son correctos,
                     puedes comprobar el bit de paridad, el complemento A1 y el resultado de la operacion AND.</p>
                 <div class="card bg-dark">
@@ -121,9 +157,6 @@
                             A1</button>
                         <button onclick="ande()" type="submit" id="btn3" class="btn-primary">Resultado AND</button>
 
-                    </form>
-                    <form action="index.html">
-                        <input class="btn btn-danger" type="submit" value="Volver" />
                     </form>
                 </div>
             </div>
