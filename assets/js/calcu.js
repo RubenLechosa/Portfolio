@@ -1,4 +1,5 @@
 function validate() {
+    
     return false;
 
     paridad();
@@ -23,7 +24,7 @@ function ande() {
         comprobar = true;
     }
 
-    if (num1.length == 0 ) {
+    if (num1.length == 0) {
         text.innerHTML = "Rellena la casilla 1"
         text.style.color = "red";
         comprobar = false;
@@ -72,13 +73,16 @@ function ande() {
         return false;
     }
 
-
-
     for (var i = 0; i < num1.length; i++) {
 
         resultado = resultado + (num1.charAt(i) * num2.charAt(i));
     }
-    text.innerHTML = "El resultado del AND es: " + resultado;
+
+
+    const convertAndReverse = resultado.toString().split("").reverse().join("");
+
+
+    text.innerHTML = "El resultado del AND es: " + convertAndReverse;
     text.style.color = "green";
     return false;
 
