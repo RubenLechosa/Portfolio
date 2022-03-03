@@ -1,5 +1,5 @@
 function validate() {
-    
+
     return false;
 
     paridad();
@@ -72,17 +72,56 @@ function ande() {
         text.style.color = "red";
         return false;
     }
+    var temporal = 0;
+    var resultado1 = "";
+    var resultado2 = "";
 
-    for (var i = 0; i < num1.length; i++) {
 
-        resultado = resultado + (num1.charAt(i) * num2.charAt(i));
+
+
+    if (num1.length != num2.length) {
+
+        if (num1.length < num2.length) {
+            temporal = num2.length - num1.length;
+            for (var i = 0; i < temporal; i++) {
+                resultado1 = resultado1 + "0";
+            }
+            resultado2 = resultado1 + num1;
+
+            for (var i = 0; i < resultado2.length; i++) {
+
+                resultado = resultado + (resultado2.charAt(i) * num2.charAt(i));
+            }
+            alert(resultado2 + " y " + num2);
+        } else {
+            temporal = num1.length - num2.length;
+
+            for (var i = 0; i < temporal; i++) {
+                resultado1 = resultado1 + "0";
+            }
+            resultado2 = resultado1 + num2;
+            for (var i = 0; i < resultado2.length; i++) {
+
+                resultado = resultado + (num1.charAt(i) * resultado2.charAt(i));
+            }
+            alert(num1 + " y " + resultado2);
+        }
+
+    } else {
+
+        for (var i = 0; i < num1.length; i++) {
+
+            resultado = resultado + (num1.charAt(i) * num2.charAt(i));
+        }
+
     }
 
 
-    const convertAndReverse = resultado.toString().split("").reverse().join("");
 
 
-    text.innerHTML = "El resultado del AND es: " + convertAndReverse;
+    //const convertAndReverse = resultado.toString().split("").reverse().join("");
+
+    text.innerHTML = "El resultado del AND es: " + resultado;
     text.style.color = "green";
     return false;
 
