@@ -1,3 +1,5 @@
+
+<!-- Para enviar correos -->
 <?php 
 
 $name = $_POST['name'];

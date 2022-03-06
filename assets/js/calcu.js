@@ -116,11 +116,6 @@ function ande() {
 
     }
 
-
-
-
-    //const convertAndReverse = resultado.toString().split("").reverse().join("");
-
     text.innerHTML = "El resultado del AND es: " + resultado;
     text.style.color = "green";
     return false;
