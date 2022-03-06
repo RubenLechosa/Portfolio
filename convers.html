@@ -53,7 +53,7 @@
                 <p class="blue-text">Esta calculadora sirve para que puedas comprobar si tus cálculos son correctos,
                     puedes comprobar el bit de paridad, el complemento A1 y el resultado de la operación AND.</p>
                 <div class="card bg-dark">
-                    <form class="form-card" onsubmit="return validate()">
+                    <form onsubmit="return validate()" class="form-card" >
                         <div class="row justify-content-between text-left">
                             <div class="form-group col-sm-6 flex-column d-flex">
                                 <label class="form-control-label px-3" style="color: #fff;">Número binario</label>
@@ -64,7 +64,6 @@
                             </div>
                         </div>
                         <p id="text" style="color: red;"></p>
-                        <p id="text2" style="color: red;"></p>
                         <button onclick="paridad()" type="submit" id="btn1" class="btn-primary">Calcular bit de
                             paridad</button>
                         <button onclick="auno()" type="submit" id="btn2" class="btn-primary">Calcular complemento

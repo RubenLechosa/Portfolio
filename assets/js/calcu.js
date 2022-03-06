@@ -1,11 +1,13 @@
-function validate() {
 
-    return false;
 
     paridad();
     auno();
     ande();
-}
+
+    function validate() {
+        return false;
+    
+    }
 
 function ande() {
     var num1 = document.getElementById("nbin").value;
@@ -92,7 +94,6 @@ function ande() {
 
                 resultado = resultado + (resultado2.charAt(i) * num2.charAt(i));
             }
-            alert(resultado2 + " y " + num2);
         } else {
             temporal = num1.length - num2.length;
 
@@ -104,7 +105,7 @@ function ande() {
 
                 resultado = resultado + (num1.charAt(i) * resultado2.charAt(i));
             }
-            alert(num1 + " y " + resultado2);
+
         }
 
     } else {
