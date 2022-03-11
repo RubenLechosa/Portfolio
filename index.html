@@ -23,6 +23,14 @@
   <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="alternate" hreflang="es" href="https://rubenlechosa.com">
+  <link rel="alternate" hreflang="en" href="https://en.rubenlechosa.com">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+      Weglot.initialize({
+          api_key: 'wg_30449dd70ae43980c7c8cca1c854993d2'
+      });
+  </script>
 
 </head>
 
@@ -37,7 +45,11 @@
       <h1 class="logo"><a href="index.html"></a></h1>
       
       <div style="margin-left: -50%;" class="float-left"> 
-        
+          <select id="langSelector">
+            <option>:choose</option>
+            <option value="en">:english</option>
+            <option value="es">:español</option>
+          </select>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -488,17 +500,6 @@
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
-
-<!-- ConveyThis code -->
-<script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("DOMContentLoaded", function(e) {
-		ConveyThis_Initializer.init({
-			api_key: "pub_33b4388c2b83cc58681a573d0bc9d4f6"
-		});
-	});
-</script>
-<!-- End ConveyThis code -->
 
 </body>
 
